@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { ProxyWebSocket } from './lib/stores/ProxyWebSocket'
+  import { ProxyWebSocket } from './lib/classes/ProxyWebSocket'
 
   let messages: Array<string> = []
   const websocket: ProxyWebSocket = new ProxyWebSocket(
