@@ -11,10 +11,10 @@ class ProxyWebSocket extends WebSocket {
     const OPEN = (): void => {
       this.state.set(this.OPEN)
     }
-    const ERROR = () => {
+    const ERROR = (): void => {
       CLOSE()
     }
-    const CLOSE = () => {
+    const CLOSE = (): void => {
       this.state.set(this.CLOSED)
       this.removeEventListener('open', OPEN)
       this.removeEventListener('error', ERROR)
